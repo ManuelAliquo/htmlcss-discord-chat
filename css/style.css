@@ -25,7 +25,7 @@ button {
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: inherit;
 }
 
 /* Utilities */
@@ -33,11 +33,6 @@ a {
   display: flex;
   height: calc(100vh - 90px);
   background-color: #141318;
-}
-
-.footer-nav {
-  background-color: #2d2d35;
-  height: 90px;
 }
 
 /* Sidebar */
@@ -104,4 +99,37 @@ header nav {
 
 .chat-list {
   flex-grow: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #2d2d35;
+  height: 90px;
+  padding: 15px 0;
+}
+
+.footer-nav > ul {
+  display: flex;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.footer-item {
+  flex: 1 1 0;
+}
+
+.footer-item > a {
+  display: block;
+}
+
+.footer-item span {
+  font-size: 0.8rem;
+}
+
+.my-profile img {
+  margin: 0 auto;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
