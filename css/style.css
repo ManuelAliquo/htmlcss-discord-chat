@@ -18,3 +18,40 @@ a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
+/* Utilities */
+.debug {
+  border: 2px dashed red;
+  padding: 6px;
+}
+
+.wrapper {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.sidebar {
+  width: 80px;
+  height: 100%;
+  background-color: #141318;
+}
+
+.messages {
+  background-color: #1c1d22;
+  height: 100%;
+  width: calc(100% - 80px);
+}
+
+.messages > header {
+  height: 80px;
+}
+
+.chat-box {
+  overflow-y: scroll;
+  height: calc(100% - 80px);
+}
+
+.footer-nav {
+  background-color: #2d2d35;
+  height: 80px;
+}
