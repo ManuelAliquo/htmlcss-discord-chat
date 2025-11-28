@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -20,29 +29,10 @@ a {
 }
 
 /* Utilities */
-.debug {
-  border: 2px dashed red;
-  padding: 6px;
-}
-
 .wrapper {
   display: flex;
   height: calc(100vh - 90px);
-}
-
-.messages {
-  background-color: #1c1d22;
-  width: calc(100% - 80px);
-  display: flex;
-  flex-direction: column;
-}
-
-.messages > header {
-  height: 80px;
-}
-
-.chat-box {
-  flex-grow: 1;
+  background-color: #141318;
 }
 
 .footer-nav {
@@ -58,7 +48,6 @@ a {
   gap: 10px;
   padding: 25px 15px;
   width: 90px;
-  background-color: #141318;
 }
 
 .sidebar-item {
@@ -66,4 +55,53 @@ a {
   max-height: 60px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* Messages */
+.chat-box {
+  padding: 20px 20px 0 20px;
+  background-color: #1c1d22;
+  width: calc(100% - 80px);
+  height: 99%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 0 0 0;
+}
+
+.chat-box > header {
+  height: 80px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+.add-friends {
+  text-align: center;
+  line-height: 35px;
+  height: 100%;
+  margin: 0 20px;
+  flex-grow: 1;
+  background-color: #373a43;
+  border-radius: 15px;
+}
+
+.search {
+  font-size: 1.1rem;
+  background-color: #373a43;
+  text-align: center;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.chat-list {
+  flex-grow: 1;
 }
