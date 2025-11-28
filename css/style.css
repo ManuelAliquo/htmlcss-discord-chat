@@ -27,19 +27,19 @@ a {
 
 .wrapper {
   display: flex;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
 }
 
 .sidebar {
-  width: 80px;
-  height: 100%;
+  width: 90px;
   background-color: #141318;
 }
 
 .messages {
   background-color: #1c1d22;
-  height: 100%;
   width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
 }
 
 .messages > header {
@@ -47,11 +47,10 @@ a {
 }
 
 .chat-box {
-  overflow-y: scroll;
-  height: calc(100% - 80px);
+  flex-grow: 1;
 }
 
 .footer-nav {
   background-color: #2d2d35;
-  height: 80px;
+  height: 90px;
 }
