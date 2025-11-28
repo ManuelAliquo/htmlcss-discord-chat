@@ -46,15 +46,19 @@ a {
 }
 
 .sidebar-item {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 55px;
+  max-height: 55px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-/* Messages */
+.sidebar-item img {
+  object-fit: cover;
+}
+
+/* Chat-Box */
 .chat-box {
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   background-color: #1c1d22;
   width: calc(100% - 80px);
   height: 99%;
@@ -64,6 +68,7 @@ a {
   border-radius: 20px 0 0 0;
 }
 
+/* Messages Header */
 .chat-box > header {
   height: 80px;
   font-size: 0.8rem;
@@ -73,11 +78,13 @@ a {
 }
 
 header nav {
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
 
 .add-friends {
+  font-size: 1.1rem;
   text-align: center;
   line-height: 35px;
   height: 100%;
@@ -97,8 +104,30 @@ header nav {
   border-radius: 50%;
 }
 
+/* Chat List */
 .chat-list {
+  overflow-y: auto;
+  color: rgba(255, 255, 255, 0.4);
   flex-grow: 1;
+}
+
+.chat {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-info {
+  padding-left: 10px;
+  flex: 1 1 0;
+  line-height: 23px;
+}
+
+.chat img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 /* Footer */
