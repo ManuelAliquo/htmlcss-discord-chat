@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -13,7 +21,7 @@
   <body>
     <div class="wrapper">
       <div class="sidebar">
-        <a href="#" class="direct">
+        <a href="#" class="direct-icon">
           <img src="./img/logo.webp" alt="Direct Icon" />
         </a>
         <a href="#" class="sidebar-item">
@@ -46,7 +54,8 @@
         <nav class="chat-list">
           <ul>
             <li class="chat">
-              <img src="./img/profile1.webp" alt="" />
+              <img src="./img/profile1.webp" alt="Profile Pic" />
+              <div class="status active"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -54,7 +63,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile2.webp" alt="" />
+              <img src="./img/profile2.webp" alt="Profile Pic" />
+              <div class="status offline"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -62,7 +72,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile3.webp" alt="" />
+              <img src="./img/profile3.webp" alt="Profile Pic" />
+              <div class="status idle"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -70,7 +81,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile4.webp" alt="" />
+              <img src="./img/profile4.webp" alt="Profile Pic" />
+              <div class="status active"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -78,7 +90,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile5.webp" alt="" />
+              <img src="./img/profile5.webp" alt="Profile Pic" />
+              <div class="status offline"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -86,7 +99,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile6.webp" alt="" />
+              <img src="./img/profile6.webp" alt="Profile Pic" />
+              <div class="status idle"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -94,7 +108,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile7.webp" alt="" />
+              <img src="./img/profile7.webp" alt="Profile Pic" />
+              <div class="status active"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -102,7 +117,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile8.webp" alt="" />
+              <img src="./img/profile8.webp" alt="Profile Pic" />
+              <div class="status offline"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -110,7 +126,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile9.webp" alt="" />
+              <img src="./img/profile9.webp" alt="Profile Pic" />
+              <div class="status idle"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -118,7 +135,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile10.webp" alt="" />
+              <img src="./img/profile10.webp" alt="Profile Pic" />
+              <div class="status active"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -126,7 +144,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile11.webp" alt="" />
+              <img src="./img/profile11.webp" alt="Profile Pic" />
+              <div class="status offline"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -134,7 +153,8 @@
               <div class="time">2min</div>
             </li>
             <li class="chat">
-              <img src="./img/profile12.webp" alt="" />
+              <img src="./img/profile12.webp" alt="Profile Pic" />
+              <div class="status idle"></div>
               <div class="chat-info">
                 <h3>Giuseppe Rossi</h3>
                 <span>ciao! tutto bene?</span>
@@ -149,12 +169,16 @@
       <nav class="footer-nav">
         <ul>
           <li class="footer-item">
-            <a href="#"><i class="bi bi-houses-fill"></i></a>
-            <span>Pagina principale</span>
+            <a href="#">
+              <i class="bi bi-houses-fill"></i>
+              <span>Pagina principale</span>
+            </a>
           </li>
           <li class="footer-item">
-            <a href="#"><i class="bi bi-bell-fill"></i></a>
-            <span>Notifiche</span>
+            <a href="#">
+              <i class="bi bi-bell-fill"></i>
+              <span>Notifiche</span>
+            </a>
           </li>
           <li class="footer-item my-profile">
             <a href="#">
@@ -164,6 +188,7 @@
           </li>
         </ul>
       </nav>
+      <button class="add-chat"><i class="bi bi-plus-circle-fill"></i></button>
     </footer>
   </body>
 </html>
